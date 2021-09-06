@@ -1,0 +1,15 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content-theme-extended-docs": "^0.0.1",
+    "nuxt": "^2.14.12"
+  }
+}
