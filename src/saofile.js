@@ -1,70 +1,70 @@
 module.exports = {
-  prompts () {
+  prompts() {
     return [
       {
-        name: 'name',
-        message: 'Project name:',
+        name: "name",
+        message: "Project name:",
         default: this.outFolder,
-        filter: val => val.toLowerCase()
+        filter: (val) => val.toLowerCase(),
       },
       {
-        name: 'title',
-        message: 'Project title:',
-        default: 'Nuxt Content'
+        name: "title",
+        message: "Project title:",
+        default: "Nuxt Docs",
       },
       {
-        name: 'url',
-        message: 'Documentation url:',
-        url: 'https://content.nuxtjs.org'
+        name: "url",
+        message: "Documentation url:",
+        url: "https://content.nuxtjs.org",
       },
       {
-        name: 'github',
-        message: 'GitHub repository (owner/name):',
-        default: 'nuxt/content'
+        name: "github",
+        message: "GitHub repository (owner/name):",
+        default: "nuxt/content",
       },
       {
-        name: 'twitter',
-        message: 'Twitter username (@username):',
-        default: '@nuxt_js'
+        name: "twitter",
+        message: "Twitter username (@username):",
+        default: "@nuxt_js",
       },
       {
-        name: 'pm',
-        message: 'Package manager:',
+        name: "pm",
+        message: "Package manager:",
         choices: [
-          { name: 'Yarn', value: 'yarn' },
-          { name: 'Npm', value: 'npm' }
+          { name: "Yarn", value: "yarn" },
+          { name: "Npm", value: "npm" },
         ],
-        type: 'list',
-        default: 'yarn'
-      }
-    ]
+        type: "list",
+        default: "yarn",
+      },
+    ];
   },
-  templateData () {
-    const pm = this.answers.pm === 'yarn' ? 'yarn' : 'npm'
-    const pmRun = this.answers.pm === 'yarn' ? 'yarn' : 'npm run'
+  templateData() {
+    const pm = this.answers.pm === "yarn" ? "yarn" : "npm";
+    const pmRun = this.answers.pm === "yarn" ? "yarn" : "npm run";
 
     return {
       pm,
-      pmRun
-    }
+      pmRun,
+    };
   },
   actions: [
     {
-      type: 'add',
-      files: '**',
-      templateDir: '../template'
+      type: "add",
+      files: "**",
+      templateDir: "../template",
     },
     {
-      type: 'move',
+      type: "move",
       patterns: {
-        gitignore: '.gitignore',
-        '_package.json': 'package.json'
-      }
-    }
+        gitignore: ".gitignore",
+        "_package.json": "package.json",
+      },
+    },
   ],
-  async completed () {
-    this.gitInit()
-    await this.npmInstall()
-    this.showProjectTips()
-  }
-}
+  async completed() {
+    this.gitInit();
+    await this.npmInstall();
+    this.showProjectTips();
+  },
+};

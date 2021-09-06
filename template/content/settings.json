@@ -6,5 +6,8 @@
     "dark": "/logo-dark.svg"
   },
   "github": "<%= github %>",
-  "twitter": "<%= twitter %>"
+  "twitter": "<%= twitter %>",
+  "facebook": "<%= facebook %>",
+  "website": "<%= website %>",
+  "youtube": "<%= youtube %>"
 }

@@ -1,4 +1,4 @@
-# create-nuxt-content-extended-docs
+# create-nuxt-extended-docs
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -20,13 +20,13 @@ yarn create nuxt-content-docs <project-name>
 Or with [npx](https://www.npmjs.com/package/npx) (`npx` is shipped by default since [npm](https://www.npmjs.com/get-npm) `5.2.0`)
 
 ```bash
-npx create-nuxt-content-extended-docs <project-name>
+npx create-nuxt-extended-docs <project-name>
 ```
 
 Or starting with npm v6.1 you can do:
 
 ```bash
-npm init nuxt-content-extended-docs <project-name>
+npm init create-nuxt-extended-docs <project-name>
 ```
 
 ## License
@@ -36,9 +36,9 @@ npm init nuxt-content-extended-docs <project-name>
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/create-nuxt-content-docs/latest.svg
-[npm-version-href]: https://npmjs.com/package/create-nuxt-content-extended-docs
+[npm-version-href]: https://npmjs.com/package/create-nuxt-extended-docs
 [npm-downloads-src]: https://img.shields.io/npm/dt/create-nuxt-content-docs.svg
-[npm-downloads-href]: https://npmjs.com/package/create-nuxt-content-extended-docs
+[npm-downloads-href]: https://npmjs.com/package/create-nuxt-extended-docs
 [license-src]: https://img.shields.io/npm/l/@nuxt/content.svg
 [license-href]: https://npmjs.com/package/@nuxt/content
 [lerna-src]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
